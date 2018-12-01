@@ -15,10 +15,6 @@ import com.mysite.springboottest.service.TranslationService;
 public class TranslationServiceTest {
     @Autowired
 	private TranslationService translationService;
-	@Test
-	public void testFindAll() {
-		fail("Not yet implemented");
-	}
 
 	@Test
 	public void testCreate() {
@@ -26,19 +22,6 @@ public class TranslationServiceTest {
 		translationService.create(translation);
 	}
 
-	@Test
-	public void testUpdate() {
-		fail("Not yet implemented");
-	}
 
-	@Test
-	public void testDelete() {
-		fail("Not yet implemented");
-	}
-
-	@Test
-	public void testGet() {
-		fail("Not yet implemented");
-	}
 
 }
