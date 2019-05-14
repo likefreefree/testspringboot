@@ -10,7 +10,7 @@ public class TestApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(TestApplication.class, args);
 	}
-
+    //test change21
 	@Bean
 	public MyApplicationRunner getMyApplicationRunner(){
 		return new MyApplicationRunner();
