@@ -30,7 +30,7 @@
 		<relativePath/> 
 	</parent>
 -->
-	<properties>
+	
   <properties>
     <spring-batch.version>4.0.1.RELEASE</spring-batch.version>
     <undertow.version>1.4.26.Final</undertow.version>
