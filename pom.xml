@@ -10,25 +10,26 @@
 
 	<name>springboottest</name>
 	<description>test project for Spring Boot</description>
-	<distributionManagement>
-		<repository>
-			<id>central</id>
-			<name>0cdacdaa5b17-releases</name>
-			<url>http://bigdata1:8081/artifactory/maven_local_repo</url>
-		</repository>
-		<snapshotRepository>
-			<id>snapshots</id>
-			<name>0cdacdaa5b17-snapshots</name>
-			<url>http://bigdata1:8081/artifactory/maven_local_repo</url>
-		</snapshotRepository>
-	</distributionManagement>
+<distributionManagement>
+    <repository>
+        <id>central</id>
+        <name>2617af94130e-releases</name>
+        <url>http://bigdata1:8081/artifactory/maven_local_repo</url>
+    </repository>
+    <snapshotRepository>
+        <id>snapshots</id>
+        <name>2617af94130e-snapshots</name>
+        <url>http://bigdata1:8081/artifactory/maven_local_repo</url>
+    </snapshotRepository>
+</distributionManagement>
+<!--
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
 		<version>2.0.6.RELEASE</version>
-		<relativePath/> <!-- lookup parent from repository -->
+		<relativePath/> 
 	</parent>
-
+-->
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
