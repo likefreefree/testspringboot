@@ -10,18 +10,7 @@
 
 	<name>springboottest</name>
 	<description>test project for Spring Boot</description>
-<distributionManagement>
-    <repository>
-        <id>central</id>
-        <name>2617af94130e-releases</name>
-        <url>http://bigdata1:8081/artifactory/maven_local_repo</url>
-    </repository>
-    <snapshotRepository>
-        <id>snapshots</id>
-        <name>2617af94130e-snapshots</name>
-        <url>http://bigdata1:8081/artifactory/maven_local_repo</url>
-    </snapshotRepository>
-</distributionManagement>
+
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
@@ -36,6 +25,36 @@
 		<!-- <hibernate.version>5.2.8.Final</hibernate.version>  -->
 		<tomcat.version>8.5.37</tomcat.version>
 	</properties>
+
+<distributionManagement>
+    <repository>
+        <id>central</id>
+        <name>maven_virtual_repo</name>
+        <url>http://bigdata1:8081/artifactory/maven_virtual_repo</url>
+    </repository>
+    <snapshotRepository>
+        <id>snapshots</id>
+        <name>maven_virtual_repo</name>
+        <url>http://bigdata1:8081/artifactory/maven_virtual_repo</url>
+    </snapshotRepository>
+</distributionManagement>
+
+<repositories>
+<repository>
+<snapshots>
+<enabled>false</enabled>
+</snapshots>
+<id>central</id>
+<name>maven_virtual_repo</name>
+<url>http://bigdata1:8081/artifactory/maven_virtual_repo</url>
+</repository>
+<repository>
+<snapshots />
+<id>snapshots</id>
+<name>maven_virtual_repo</name>
+<url>http://bigdata1:8081/artifactory/maven_virtual_repo</url>
+</repository>
+</repositories>
 
 	<dependencies>
 		<dependency>

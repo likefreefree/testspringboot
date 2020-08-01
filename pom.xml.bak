@@ -25,7 +25,18 @@
 		<!-- <hibernate.version>5.2.8.Final</hibernate.version>  -->
 		<tomcat.version>8.5.37</tomcat.version>
 	</properties>
-
+<distributionManagement>
+    <repository>
+        <id>central</id>
+        <name>maven_virtual_repo</name>
+        <url>http://bigdata1:8081/artifactory/maven_virtual_repo</url>
+    </repository>
+    <snapshotRepository>
+        <id>snapshots</id>
+        <name>maven_virtual_repo</name>
+        <url>http://bigdata1:8081/artifactory/maven_virtual_repo</url>
+    </snapshotRepository>
+</distributionManagement>
 	<dependencies>
 		<dependency>
 			<groupId>org.apache.tomcat</groupId>
